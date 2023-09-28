@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+i = 10
+string = "Best School"
+until [$i == 1]
+do
+	echo "$string"
+	$((i--))
+done
+

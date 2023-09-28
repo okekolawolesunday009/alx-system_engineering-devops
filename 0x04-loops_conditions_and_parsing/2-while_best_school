@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+a=10;
+string="Best School"
+b=0
+
+while [$b -gt $a]
+do
+	echo "$string"
+	((b++))
+done
+
