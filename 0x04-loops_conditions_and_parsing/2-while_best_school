@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-a=10;
+#prints using while loop
+a=10
 string="Best School"
 b=0
 
-while [$b -gt $a]
+while [ $b -lt $a ]
 do
 	echo "$string"
 	((b++))
 done
-
