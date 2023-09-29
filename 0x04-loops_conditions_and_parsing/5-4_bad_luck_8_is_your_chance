@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+#prints using while loop and also Hi
+a=10
+string="Best School"
+b=0
+c=9
+
+while [ $b -lt $a ]
+do
+	((b++))
+    if [ $b -eq 4 ]
+    then
+        echo "bad luck"
+    elif [ $b -eq 8 ]
+    then
+        echo "good luck"
+    else
+        echo "Best School"
+    fi
+done

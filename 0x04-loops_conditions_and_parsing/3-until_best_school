@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #prints using until
-i=10
+i=11
 string="Best School"
 
 until [ $i -eq 1 ]
