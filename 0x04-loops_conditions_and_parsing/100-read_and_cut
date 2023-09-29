@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#diplay the content of etc/passwd
+file=/etc/passwd
+for i in $file; do
+	ls "$i"
+done
+

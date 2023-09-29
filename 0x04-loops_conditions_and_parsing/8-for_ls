@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#print list of file
+pwd_path="./"
+for i in "$pwd_path"; do
+	ls "$i"
+done
+
