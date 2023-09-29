@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#print using while and case
+b=1
+
+while [ $b -lt 21 ]
+do
+    echo "$b"
+    ((b++))
+    
+    case $b in
+        5)
+            echo "bad luck from China"
+            ;;
+        10)
+            echo "good luck from Japan"
+            ;;
+        18)
+            echo "Best luck from Italy"
+            ;;
+    esac
+done
+
