@@ -5,11 +5,11 @@ if [ -e "$file" ]; then
 	echo "$file file exist."
 	if [ -s "$file" ]; then
 		echo "$file is not empty"
-		if [ -f "$file" ]; then
-			echo "$file is a regular file"
-		fi
 	else
 		echo "$file is empty"
+	fi
+	if [ -f "$file" ]; then
+		echo "$file is a regular file"
 	fi
 else
     echo "$file does not exist."
