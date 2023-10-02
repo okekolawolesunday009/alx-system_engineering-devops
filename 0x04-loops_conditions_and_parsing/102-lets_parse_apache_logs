@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# Specify the file you want to search in
+filename="apache-access.log"
+
+# Specify the pattern you want to search for
+pattern="specific_pattern"
+
+# Check if the file exists
+if [ -f "$filename" ]; then
+    # Use grep to search for lines containing the pattern
+    grep "$pattern" "$filename"
+else
+    echo "File not found: $filename"
+fi
