@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Define the path to the passwd file
 file="/etc/passwd"
 
