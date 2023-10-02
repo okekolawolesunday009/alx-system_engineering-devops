@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-#print list of file
-
-for file in *; do
-	if [ -f "$file" ] && [[ "$file" != .* ]]; then
-		file_names=$(echo "$file" | cut -d '-' -f 2-)
-		echo "$file_names"
-	fi
-done
