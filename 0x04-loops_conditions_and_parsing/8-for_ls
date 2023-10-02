@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 #print list of file
-pwd_path="./"
-for i in "$pwd_path"; do
-	ls "$i" | cut -d '-' -f2
+
+for file in *; do
+	if [ -f "$file" ] && [[ "$file" != .* ]]; then
+		file_names=$(echo "$file" | cut -d '-' -f 2-)
+		echo "$file_names"
+	fi
 done
