@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-#diplay the content of etc/passwd
-file=/etc/passwd
-for i in $file; do
-	ls "$i"
-done
+# Define the path to the passwd file
+file="/etc/passwd"
+# Loop through each line in the passwd file
+while IFS=: read -r username _ uid _ _ home _; do
+  # Display username, user ID, and home directory path
+  echo "$username:$uid:$home"
+done < "$file"
 
