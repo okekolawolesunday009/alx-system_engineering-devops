@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Define the path to the passwd file
+file="/etc/passwd"
+
+# Loop through each line in the passwd file
+while IFS=: read -r username password uid gid user_info home shell; do
+  # Display username, user ID, and home directory path in the desired format
+  echo "The user $username is part of the $gid gang, lives in $home  and rides $shell. $uid's place is protected by the passcode $password more info about the user here: $user_info"
+done < "$file"
+

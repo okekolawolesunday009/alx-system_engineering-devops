@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#prints using until
+i=11
+string="Best School"
+
+until [ $i -eq 1 ]
+do
+	echo "$string"
+	((i--))
+done
