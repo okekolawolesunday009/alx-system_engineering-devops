@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#list ports
+echo "Listening Ports:"
+netstat -tuln | grep 'LISTEN'
