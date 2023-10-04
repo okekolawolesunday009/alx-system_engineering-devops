@@ -4,7 +4,7 @@
 filename="apache-access.log"
 
 # Specify the pattern you want to search for
-pattern="specific_pattern"
+pattern="{print $1,$7}"
 
 # Check if the file exists
 if [ -f "$filename" ]; then
