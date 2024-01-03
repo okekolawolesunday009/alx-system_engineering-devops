@@ -41,11 +41,10 @@ def export_todo_list_to_json():
                 with open(json_file_path, "w") as jsonfile:
                     json.dump(all_data, jsonfile)
 
-                print(f'Data exported to {json_file_path} successfully.')
             except requests.exceptions.RequestException as e:
                 print(f"Error fetched data: {e}")
                 sys.exit(1)
-
+        print(f'Data exported to {json_file_path} successfully.')
 
 if __name__ == "__main__":
     export_todo_list_to_json()
