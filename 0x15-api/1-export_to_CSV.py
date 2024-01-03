@@ -1,7 +1,9 @@
+#!/usr/bin/python3
 """returns to-do list info of an employeeID"""
-from sys import argv
-import requests
 import csv
+import requests
+from sys import argv
+
 
 if __name__ == "__main__":
     if len(argv) != 2:
